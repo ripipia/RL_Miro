@@ -9,3 +9,5 @@ numpy 1.22.4 # conda install numpy
 torch 1.11.0 # pip install torch==1.11.0
 
 gym 0.8.1  # pip install gym==0.8.1
+
+matplotlib  # conda install matplotlib

@@ -14,6 +14,14 @@ import random
 
 from matplotlib import pylab as plt
 
+print(torch.__version__) # 파이 토치 버전 확인
+USE_CUDA = torch.cuda.is_available()
+print(USE_CUDA) # GPU 사용 확인 True가 출력 될 시 GPU가 사용가능
+device = torch.device('cuda:0' if USE_CUDA else 'cpu')
+print(device) # GPU가 사용가능할 경우 cuda:0가 출력되며 사용 불가능할 경우 cpu가 출력됨
+
+
+
 l1 = 64  # 4X4X4
 
 l2 = 150
